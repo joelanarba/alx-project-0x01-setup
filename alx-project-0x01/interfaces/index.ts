@@ -78,7 +78,9 @@ export interface UserData {
   company: Company;
 }
 
+import { UserProps } from "./path_to_UserProps"
+
 export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (user: UserData) => void;
+  onSubmit: (post: UserProps) => void;
 }
